@@ -1,0 +1,21 @@
+name: Build APK
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create demo APK
+        run: |
+          mkdir output
+          echo "DealLens Demo App" > output/app-debug.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: deallens-apk
+          path: output/app-debug.apk
