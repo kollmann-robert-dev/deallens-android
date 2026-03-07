@@ -1,4 +1,4 @@
-package com.deallens.data.network
+package com.dealz.data.network
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -21,12 +21,12 @@ object ApiClient {
         .addInterceptor(logging)
         .build()
 
-    val api: DealLensApi by lazy {
+    val api: DealZApi by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(DealLensApi::class.java)
+            .create(DealZApi::class.java)
     }
 }

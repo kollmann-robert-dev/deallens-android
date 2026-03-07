@@ -1,4 +1,4 @@
-package com.deallens.data.model
+package com.dealz.data.model
 
 data class ProductItem(
     val id: String,

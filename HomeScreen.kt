@@ -1,4 +1,4 @@
-package com.deallens.ui.screens
+package com.dealz.ui.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -20,11 +20,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.deallens.ui.viewmodel.DealLensViewModel
+import com.dealz.ui.viewmodel.DealZViewModel
 
 @Composable
 fun HomeScreen(
-    viewModel: DealLensViewModel,
+    viewModel: DealZViewModel,
     onOpenScan: () -> Unit,
     onOpenResults: () -> Unit
 ) {
@@ -36,7 +36,7 @@ fun HomeScreen(
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        Text("DealLens", style = MaterialTheme.typography.headlineMedium)
+        Text("DealZ", style = MaterialTheme.typography.headlineMedium)
         Text("Produkte suchen oder Prospekt-Scan starten")
 
         state.info?.let {

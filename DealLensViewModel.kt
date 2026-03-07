@@ -1,11 +1,11 @@
-package com.deallens.ui.viewmodel
+package com.dealz.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deallens.data.model.BestOfferResponse
-import com.deallens.data.model.ProductItem
-import com.deallens.data.model.ScanMatchItem
-import com.deallens.data.repository.DealLensRepository
+import com.dealz.data.model.BestOfferResponse
+import com.dealz.data.model.ProductItem
+import com.dealz.data.model.ScanMatchItem
+import com.dealz.data.repository.DealZRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -21,8 +21,8 @@ data class UiState(
     val scanResults: List<ScanMatchItem> = emptyList()
 )
 
-class DealLensViewModel(
-    private val repository: DealLensRepository = DealLensRepository()
+class DealZViewModel(
+    private val repository: DealZRepository = DealZRepository()
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(UiState())

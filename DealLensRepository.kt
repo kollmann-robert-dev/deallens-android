@@ -1,13 +1,13 @@
-package com.deallens.data.repository
+package com.dealz.data.repository
 
-import com.deallens.data.model.BestOfferResponse
-import com.deallens.data.model.ProductItem
-import com.deallens.data.model.ScanMatchItem
-import com.deallens.data.model.ScanMatchRequest
-import com.deallens.data.model.ScannedItem
-import com.deallens.data.network.ApiClient
+import com.dealz.data.model.BestOfferResponse
+import com.dealz.data.model.ProductItem
+import com.dealz.data.model.ScanMatchItem
+import com.dealz.data.model.ScanMatchRequest
+import com.dealz.data.model.ScannedItem
+import com.dealz.data.network.ApiClient
 
-class DealLensRepository {
+class DealZRepository {
     private val demoProducts = listOf(
         ProductItem(
             id = "demo-nutella",

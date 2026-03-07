@@ -1,16 +1,16 @@
-package com.deallens.ui
+package com.dealz.ui
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.deallens.ui.screens.HomeScreen
-import com.deallens.ui.screens.ResultScreen
-import com.deallens.ui.screens.ScanScreen
-import com.deallens.ui.viewmodel.DealLensViewModel
+import com.dealz.ui.screens.HomeScreen
+import com.dealz.ui.screens.ResultScreen
+import com.dealz.ui.screens.ScanScreen
+import com.dealz.ui.viewmodel.DealZViewModel
 
 @Composable
-fun DealLensApp(viewModel: DealLensViewModel) {
+fun DealZApp(viewModel: DealZViewModel) {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = "home") {

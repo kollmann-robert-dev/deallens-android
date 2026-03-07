@@ -1,4 +1,4 @@
-package com.deallens.ui.screens
+package com.dealz.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,11 +15,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.deallens.ui.viewmodel.DealLensViewModel
+import com.dealz.ui.viewmodel.DealZViewModel
 
 @Composable
 fun ScanScreen(
-    viewModel: DealLensViewModel,
+    viewModel: DealZViewModel,
     onBack: () -> Unit,
     onFinished: () -> Unit
 ) {

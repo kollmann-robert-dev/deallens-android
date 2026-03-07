@@ -1,16 +1,16 @@
-package com.deallens.data.network
+package com.dealz.data.network
 
-import com.deallens.data.model.BestOfferResponse
-import com.deallens.data.model.ProductItem
-import com.deallens.data.model.ScanMatchItem
-import com.deallens.data.model.ScanMatchRequest
+import com.dealz.data.model.BestOfferResponse
+import com.dealz.data.model.ProductItem
+import com.dealz.data.model.ScanMatchItem
+import com.dealz.data.model.ScanMatchRequest
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-interface DealLensApi {
+interface DealZApi {
     @GET("products/search")
     suspend fun searchProducts(
         @Query("q") q: String,
